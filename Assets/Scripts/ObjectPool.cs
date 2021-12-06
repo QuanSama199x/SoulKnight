@@ -17,15 +17,18 @@ public class ObjectPool : MonoBehaviour
 
     public string ROOM_ENEMY = "RoomEnemy";
     public string BULLET_PISTAL = "BulletPistal";
+    public string ENEMY = "Enemy";
 
 
     public PoolElement Room;
     public PoolElement BulletPistal;
+    public PoolElement Enemy;
     // Start is called before the first frame update
     void Start()
     {
         Room.start(Resources.Load<GameObject>(ROOM_ENEMY));
         BulletPistal.start(Resources.Load<GameObject>(BULLET_PISTAL));
+        Enemy.start(Resources.Load<GameObject>(ENEMY));
     }
 
     // Update is called once per frame

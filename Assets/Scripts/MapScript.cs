@@ -21,7 +21,7 @@ public class MapScript : MonoBehaviour
         obj.SetActive(true);
         RoomInGame.Add(obj);
         obj.transform.position = PointSpawnRoom;
-        for (int i = 0; i < 5; i++)
+        for (int i = 0; i < 6; i++)
         {
 
                 switch (Random.Range(0, 5))

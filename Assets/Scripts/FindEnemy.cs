@@ -15,6 +15,8 @@ public class FindEnemy : MonoBehaviour
         }
     }
 
+    public RaycastHit2D[] ListEnemy;
+
     public GameObject TargetEnemy;
 
     public int j = 0;
@@ -27,6 +29,8 @@ public class FindEnemy : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        /*ListEnemy = Physics2D.CircleCastAll(PlayerScript.Instance.transform.position,2,Vector2.zero,18,1);
+        Debug.LogError(ListEnemy[0].collider.name);*/
         if(EnemyManager.Instance.ListEnemy.Count>0)
         {
             TargetEnemy.transform.position = new Vector3(EnemyManager.Instance.ListEnemy[j].transform.position.x, EnemyManager.Instance.ListEnemy[j].transform.position.y, EnemyManager.Instance.ListEnemy[j].transform.position.z);

@@ -40,9 +40,9 @@ public class PlayerScript : MonoBehaviour
    public void DirectionPlayer()
     {/*Physics2D.CircleCast*/
         Vector3 dir = EnemyManager.Instance.ListEnemy[FindEnemy.Instance.j].transform.position -transform.position;
-        Debug.DrawRay(Weapon.transform.position, dir,Color.red);
+        Debug.DrawRay(Weapon.transform.position, dir,Color.green,0,true);
         if (EnemyManager.Instance.ListEnemy.Count>0&& Vector3.Distance(transform.position,EnemyManager.Instance.ListEnemy[FindEnemy.Instance.j].transform.position)<=8 
-            && Physics2D.Raycast(transform.position, dir, range, 1))
+            && Physics2D.Raycast(transform.position, dir, range, 1)&& EnemyManager.Instance.ListEnemy[FindEnemy.Instance.j].activeInHierarchy)
         {
             
             if(Physics2D.Raycast(transform.position, dir,range,1).collider.tag =="Enemy")
