@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 58958b67b85fb784e94a12332073be72, type: 3}
+  m_Name: SpriteEnemy
+  m_EditorClassIdentifier: 
+  Enemy:
+  - {fileID: 21300000, guid: 059563cf38f413f4ea5454db4926b4dc, type: 3}
+  - {fileID: 21300000, guid: 5825f34c122dae84495f0adafdcb00cd, type: 3}
+  - {fileID: 21300000, guid: cee8a2269530e7740a2a70f5ccc79480, type: 3}
+  Weapon:
+  - {fileID: 21300000, guid: fe94b8b3f071104478f56bf0e6dc4411, type: 3}
+  - {fileID: 21300000, guid: 0657c37d82b9ac34f813b3095aa548cc, type: 3}
+  - {fileID: 21300000, guid: 9f79716b2afeb3d44b44cd49ce99e3ff, type: 3}
+  - {fileID: 21300000, guid: 5b23a387bc12d064a932ec5032c2b8a8, type: 3}
+  Index:
+  - MaxHealth: 14
+    SpeedMoving: 40
+    ATK: 1
+  - MaxHealth: 10
+    SpeedMoving: 60
+    ATK: 1
+  - MaxHealth: 15
+    SpeedMoving: 30
+    ATK: 1
+  - MaxHealth: 12
+    SpeedMoving: 50
+    ATK: 2
+  - MaxHealth: 13
+    SpeedMoving: 45
+    ATK: 1

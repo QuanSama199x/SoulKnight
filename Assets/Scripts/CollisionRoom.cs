@@ -15,6 +15,7 @@ public class CollisionRoom : MonoBehaviour
             return instance;
         }
     }
+    public int ScaleSpeed;
 
     public GameObject WallC1, WallC2, WallC3, WallC4;
     // Start is called before the first frame update
@@ -39,10 +40,16 @@ public class CollisionRoom : MonoBehaviour
         }
     }
 
-    private void OnTriggerEnter2D(Collider2D other)
+    private void OnTriggerStay2D(Collider2D other)
     {
         if(other.tag=="Player"&& transform.childCount>0)
         {
+            for(int i=0;i< transform.childCount;i++)
+            {
+                transform.GetChild(i).gameObject.GetComponent<IFEnemy>().isHavePlayer = true;
+            }
+            
+            
             WallC1.SetActive(true);
             WallC2.SetActive(true);
             WallC3.SetActive(true);

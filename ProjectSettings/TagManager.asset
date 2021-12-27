@@ -9,6 +9,10 @@ TagManager:
   - Wall
   - Bullet
   - Blocker
+  - BulletPlayer
+  - WeaponinRoom
+  - Coin
+  - Mana
   layers:
   - Default
   - TransparentFX
@@ -18,10 +22,10 @@ TagManager:
   - UI
   - Player
   - Blocker
-  - 2
-  - 
+  - Floor
+  - Enemy
   - non
-  - 
+  - Weapon
   - 
   - 
   - 
